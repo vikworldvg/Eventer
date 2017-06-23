@@ -2,4 +2,4 @@
 Eventer app для отслеживания мероприятий. Json parse.
 [vk](https://vk.com/h3xb0y/)
 
-![Screenshot](https://github.com/ismailxebia/UX-UI-Navigation/blob/master/image/asas.png "Splash")
+![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/1497866662704.gif "WelcomeActivity")
