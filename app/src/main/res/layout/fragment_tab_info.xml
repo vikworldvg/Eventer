@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cast_expanded_controller_ad_container_white_stripe_color"
+    tools:context="xebia.ismail.e_learning.fragment.TabInfo">
+
+    <LinearLayout
+        android:gravity="top"
+        android:background="@color/cast_expanded_controller_ad_container_white_stripe_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.pixplicity.fontview.FontAppCompatTextView
+        style="@style/FontTextViewStyle"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="Red Flowers"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <com.pixplicity.fontview.FontAppCompatTextView
+        style="@style/FontTextViewStyle"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:text="Red Flowers"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="#565656"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/comment"
+            android:orientation="horizontal"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/phone"
+                android:tint="#979797"/>
+
+            <com.pixplicity.fontview.FontAppCompatTextView
+                android:id="@+id/num"
+                style="@style/FontTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:text="12 Comments"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <com.pixplicity.fontview.FontAppCompatTextView
+        android:id="@+id/description"
+        style="@style/FontTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="#565656"
+        android:text="@string/deskripsi"
+        android:textSize="11dp"/>
+    <com.pixplicity.fontview.FontAppCompatTextView
+        android:id="@+id/time"
+        style="@style/FontTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="32dp"
+        android:textColor="#565656"
+        android:text="TimeTimeTime"
+        android:textSize="11dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
