@@ -46,7 +46,7 @@ public class TabEvents extends Fragment {
     String nomer;
     Date date1,date2;
     public static int num ;
-    public static String url="http://eventer.at.ua/events_new.json";
+    public static String url="https://raw.githubusercontent.com/h3xboy/Eventer/master/json/events_new.json";
 
 
 

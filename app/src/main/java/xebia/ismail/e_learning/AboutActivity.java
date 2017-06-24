@@ -48,8 +48,8 @@ public class AboutActivity extends AppCompatActivity {
 
     public static class AboutFragment extends Fragment {
         int i=0;
-        String link1 = "https://github.com/h3xboy";
-        String link2 = "https://vk.com/h3xb0y";
+        String link2 = "https://github.com/h3xboy/Eventer";
+        String link1 = "https://vk.com/h3xb0y";
 
         private Context mContext;
 

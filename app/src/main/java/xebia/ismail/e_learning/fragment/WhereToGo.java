@@ -53,7 +53,7 @@ public class WhereToGo extends Fragment {
 
     private RecyclerView recyclerView;
     private ArrayList<NatureItem> itemlist;
-    public String url = "http://eventer.at.ua/events_new.json";
+    public String url = "https://raw.githubusercontent.com/h3xboy/Eventer/master/json/events_new.json";
     NatureItem contact;
     private CardAdapter adapter;
     private Date date1,date2;
@@ -122,7 +122,7 @@ public class WhereToGo extends Fragment {
                 String s1 = dateFormat.format(new Date());
 
                 JSONObject object = new JSONObject(s);
-                for (int i = 0; i < object.length()-1; i++) {
+                for (int i = 0; i < object.length(); i++) {
                     if (object.getJSONArray(String.valueOf(i)).length()!= 0){
                     JSONArray arrays = object.getJSONArray(String.valueOf(i));
                     JSONObject object1 = arrays.getJSONObject(0);
