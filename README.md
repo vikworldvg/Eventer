@@ -66,4 +66,27 @@ Eventer app для отслеживания мероприятий. Json parse.
 #### Tags
 json, db sqlite, map, recycler
 
+### libs
+##### build.gradle
+```
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.pixplicity.letterpress:library:1.0'
+    compile 'com.google.android.gms:play-services:10.2.6'
+    compile 'com.parse:parse-android:1.10.3'
+    compile 'com.mcxiaoke.popupmenu:library:1.0.3'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    compile 'com.github.ivbaranov:materialfavoritebutton:0.1.4'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+```
 ### и да, я быдлокодер
