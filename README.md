@@ -11,7 +11,7 @@ Eventer app для отслеживания мероприятий. Json parse.
 ![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/1497866139404.gif "WelcomeActivity")
 ![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/1497866227144.gif "WelcomeActivity")
 
-## Алгоритм
+## Алгоритм работы
 ![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/how.png "how")
 ##### Парсинг мероприятий выглядит следующим образом:
 ### .json файл
