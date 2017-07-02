@@ -1,6 +1,5 @@
 package xebia.ismail.e_learning;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -21,7 +20,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import xebia.ismail.e_learning.IntroVideo.VideoActivity;
 import xebia.ismail.e_learning.IntroVideo.WelcomeActivity;
@@ -29,7 +27,6 @@ import xebia.ismail.e_learning.fragment.Favorites;
 import xebia.ismail.e_learning.fragment.HomeFragment;
 import xebia.ismail.e_learning.fragment.VolumeFragment;
 
-/* Ismail Xebia */
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,10 +38,7 @@ public class MainActivity extends AppCompatActivity
     private NavigationView mNavigationView;
     private int mSelectedId;
     SharedPreferences prefs = null;
-    private String filtcher;
     private Toolbar mToolbar;
-    public boolean isFirstStart;
-    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,12 +2,8 @@ package xebia.ismail.e_learning.fragment;
 
 
 import android.app.ProgressDialog;
-import android.content.ClipData;
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.provider.CalendarContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -16,12 +12,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.github.ivbaranov.mfb.MaterialFavoriteButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,20 +21,16 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
-import java.util.List;
 import xebia.ismail.e_learning.R;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import xebia.ismail.e_learning.favorites.DBHelper;
 import xebia.ismail.e_learning.news.CardAdapter;
 import xebia.ismail.e_learning.news.NatureItem;
-import xebia.ismail.e_learning.recycler.RecyclerItem;
 
 /**
  * Created by Admin on 5/25/2016.
@@ -62,9 +48,10 @@ public class WhereToGo extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.where_to_go, container, false);
-        new myServerCall().execute();
+            new myServerCall().execute();
 
-        //itemlist= new ArrayList<Itemlist>();
+
+
         recyclerView = (RecyclerView) v.findViewById(R.id.RecyclerWTG);
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
@@ -167,7 +154,6 @@ public class WhereToGo extends Fragment {
         }
 
     }
-
 
 
 }

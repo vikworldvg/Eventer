@@ -12,11 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
-import xebia.ismail.e_learning.IntroVideo.WelcomeActivity;
-import xebia.ismail.e_learning.R;
-import xebia.ismail.e_learning.fragment.Helper;
 
 public class AboutActivity extends AppCompatActivity {
 
