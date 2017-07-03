@@ -1,5 +1,5 @@
 # Eventer!
-Eventer app для отслеживания мероприятий. Json parse.
+Eventer app for tracking events. Json parse.
 
 > ## Links
 > * [vk.com](https://vk.com/h3xb0y/)
@@ -91,4 +91,4 @@ json, db sqlite, map, recycler
     compile 'com.android.support:support-vector-drawable:25.3.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
 ```
-### и да, я быдлокодер
+
