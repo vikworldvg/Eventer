@@ -61,7 +61,7 @@ public class TabInfo extends Fragment {
         ((FontAppCompatTextView) v.findViewById(R.id.address)).setText(info);
         FontAppCompatTextView descr = (FontAppCompatTextView) v.findViewById(R.id.description);
 
-        JSONObject obj;
+        /*JSONObject obj;
         try {
             obj = new JSONObject(loadJSONFromAsset());
             JSONArray jArr = obj.getJSONArray("company");
@@ -77,9 +77,9 @@ public class TabInfo extends Fragment {
 
 
 
-        } catch (JSONException e) { e.printStackTrace(); }
+        } catch (JSONException e) { e.printStackTrace(); }*/
 
-
+        new myServerCall().execute();
 
 
         View number = v.findViewById(R.id.number);
@@ -104,7 +104,7 @@ public class TabInfo extends Fragment {
 
 
 
-    public String loadJSONFromAsset() {
+    /*public String loadJSONFromAsset() {
         String json = null;
         try {
             InputStream is = getContext().getAssets().open("descr.json");
@@ -119,5 +119,68 @@ public class TabInfo extends Fragment {
         }
         return json;
     }
+<<<<<<< HEAD
+=======
+    */
+    class myServerCall extends AsyncTask<String, Void, String> {
+        ProgressDialog bar;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            bar = ProgressDialog.show(TabInfo.this.getActivity(), "Загрузка...", "Инициализация данных");
+        }
+
+
+        @Override
+        protected String doInBackground(String... params) {
+            OkHttpClient client = new OkHttpClient();
+            Request request = new Request.Builder().url(url).build();
+
+            try {
+                Response response = client.newCall(request).execute();
+                String data = response.body().string();
+
+                if (!response.isSuccessful()) {
+                    throw new IOException("Unexpected code " + response);
+                }
+
+                return data;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            bar.dismiss();
+            itemlist = new ArrayList<>();
+
+            try {
+                JSONObject object = new JSONObject(s);
+                JSONArray jArr = object.getJSONArray("company");
+                //FOR EACH POINT, PLACE A MARKER WITH RESPECTIVE DATA
+                String desc = jArr.getJSONObject(num).getString("description");
+                String time = jArr.getJSONObject(num).getString("time");
+                nomer = jArr.getJSONObject(num).getString("num");
+                ((FontAppCompatTextView) getView().findViewById(R.id.description)).setText(desc);
+                ((FontAppCompatTextView) getView().findViewById(R.id.time)).setText(time);
+
+                ((FontAppCompatTextView) getView().findViewById(R.id.num)).setText(nomer);
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+//           adapter.notifyDataSetChanged();
+        }
+
+    }
+
+
+>>>>>>> refreshing
 }
 

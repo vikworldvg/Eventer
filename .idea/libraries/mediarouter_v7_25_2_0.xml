@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="mediarouter-v7-25.2.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/3de0a13b5d2fb7ca2ef54f7cebc5cca2102ac1e6/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/3de0a13b5d2fb7ca2ef54f7cebc5cca2102ac1e6/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b8f04a21def5a8cf5c2b21b05f671b517815ecd5/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b8f04a21def5a8cf5c2b21b05f671b517815ecd5/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
