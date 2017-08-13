@@ -63,20 +63,6 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.tab_maps, container, false);
-       /* ImageView food =(ImageView) v.findViewById(R.id.imageView5);
-        ImageView service =(ImageView) v.findViewById(R.id.imageView6);
-        ImageView sport =(ImageView) v.findViewById(R.id.imageView7);
-        ImageView dosug =(ImageView) v.findViewById(R.id.imageView8);
-        View.OnClickListener viewclick = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), Helper.class));
-            }
-        };
-        food.setOnClickListener(viewclick);
-        service.setOnClickListener(viewclick);
-        sport.setOnClickListener(viewclick);
-        dosug.setOnClickListener(viewclick);*/
         setupUI(v);
 
 
@@ -97,6 +83,8 @@ public class HomeFragment extends Fragment {
         data.add(new GridWithTilesData(R.drawable.sport,"Спорт"));
         return data;
     }
+
+
 
 
 

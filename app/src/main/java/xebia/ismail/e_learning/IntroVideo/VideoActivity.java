@@ -1,10 +1,12 @@
 package xebia.ismail.e_learning.IntroVideo;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,19 +17,37 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import xebia.ismail.e_learning.MainActivity;
 import xebia.ismail.e_learning.R;
+import xebia.ismail.e_learning.fragment.Points;
+import xebia.ismail.e_learning.fragment.TabGeometry;
+import xebia.ismail.e_learning.recycler.Itemlist;
 
 public class VideoActivity extends AppCompatActivity {
     private VideoView videoView;
     private TextView tvSignUp;
     private Button btnSignIn;
+    String url = "https://raw.githubusercontent.com/h3xb0y/Eventer/master/json/points.json";
+    public static String name,posx,posy,description,type;
 
+    private ArrayList<Points> itemlist;
+    Points points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
+        new myServerCall().execute();
         getWindow().setFormat(PixelFormat.UNKNOWN);
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
@@ -60,4 +80,71 @@ public class VideoActivity extends AppCompatActivity {
             window.setStatusBarColor(Color.TRANSPARENT);
         }
     }
+    class myServerCall extends AsyncTask<String, Void, String> {
+        ProgressDialog bar;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+           bar = ProgressDialog.show(VideoActivity.this, "Загрузка...", "Инициализация данных");
+        }
+
+
+        @Override
+        protected String doInBackground(String... params) {
+            OkHttpClient client = new OkHttpClient();
+            Request request = new Request.Builder().url(url).build();
+
+            try {
+                Response response = client.newCall(request).execute();
+                String data = response.body().string();
+
+                if (!response.isSuccessful()) {
+                    throw new IOException("Unexpected code " + response);
+                }
+
+                return data;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            bar.dismiss();
+
+
+            try {
+                JSONObject object = new JSONObject(s);
+                JSONArray jArr = object.getJSONArray("points");
+                itemlist = new ArrayList<>();
+
+
+                for (int i =0 ;i<jArr.length();i++) {
+                    points= new Points();
+                    points.setName(jArr.getJSONObject(i).getString("name"));
+                    points.setPosx(jArr.getJSONObject(i).getString("posx"));
+                    points.setPosy(jArr.getJSONObject(i).getString("posy"));
+                    points.setDescription( jArr.getJSONObject(i).getString("description"));
+                    points.setType( jArr.getJSONObject(i).getString("type"));
+                    itemlist.add(points);                }
+               name = jArr.getJSONObject(1).getString("name");
+                 posx = jArr.getJSONObject(1).getString("posx");
+                 posy = jArr.getJSONObject(1).getString("posy");
+                 description = jArr.getJSONObject(1).getString("description");
+                 type = jArr.getJSONObject(1).getString("type");
+                TabGeometry.itemlist = itemlist;
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+//           adapter.notifyDataSetChanged();
+        }
+
+    }
+
+
 }

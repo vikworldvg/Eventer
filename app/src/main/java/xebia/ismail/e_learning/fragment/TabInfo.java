@@ -26,6 +26,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import xebia.ismail.e_learning.Main2Activity;
 import xebia.ismail.e_learning.R;
 import xebia.ismail.e_learning.recycler.Itemlist;
@@ -50,7 +53,7 @@ public class TabInfo extends Fragment {
     static Itemlist contact;
     String nomer;
     private boolean istr;
-    public static String url="http://eventer.at.ua/events_new.json";
+   public static String url="https://raw.githubusercontent.com/h3xb0y/Eventer/master/json/description.json";
 
 
     @Override
@@ -61,23 +64,7 @@ public class TabInfo extends Fragment {
         ((FontAppCompatTextView) v.findViewById(R.id.address)).setText(info);
         FontAppCompatTextView descr = (FontAppCompatTextView) v.findViewById(R.id.description);
 
-        /*JSONObject obj;
-        try {
-            obj = new JSONObject(loadJSONFromAsset());
-            JSONArray jArr = obj.getJSONArray("company");
 
-            //FOR EACH POINT, PLACE A MARKER WITH RESPECTIVE DATA
-            String desc = jArr.getJSONObject(num).getString("description");
-            String time = jArr.getJSONObject(num).getString("time");
-            nomer = jArr.getJSONObject(num).getString("num");
-            ((FontAppCompatTextView) v.findViewById(R.id.description)).setText(desc);
-            ((FontAppCompatTextView) v.findViewById(R.id.time)).setText(time);
-
-             ((FontAppCompatTextView) v.findViewById(R.id.num)).setText(nomer);
-
-
-
-        } catch (JSONException e) { e.printStackTrace(); }*/
 
         new myServerCall().execute();
 
@@ -104,24 +91,7 @@ public class TabInfo extends Fragment {
 
 
 
-    /*public String loadJSONFromAsset() {
-        String json = null;
-        try {
-            InputStream is = getContext().getAssets().open("descr.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
-    }
-<<<<<<< HEAD
-=======
-    */
+
     class myServerCall extends AsyncTask<String, Void, String> {
         ProgressDialog bar;
 
@@ -171,6 +141,8 @@ public class TabInfo extends Fragment {
                 ((FontAppCompatTextView) getView().findViewById(R.id.num)).setText(nomer);
 
 
+
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -181,6 +153,5 @@ public class TabInfo extends Fragment {
     }
 
 
->>>>>>> refreshing
 }
 

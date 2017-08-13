@@ -1,7 +1,9 @@
 package xebia.ismail.e_learning.fragment;
 
+import android.app.ProgressDialog;
 import android.content.res.Resources;
 import android.graphics.Rect;
+import android.os.AsyncTask;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBar;
@@ -26,6 +28,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import xebia.ismail.e_learning.R;
 import xebia.ismail.e_learning.helper.Album;
 import xebia.ismail.e_learning.helper.AlbumsAdapter;
@@ -38,6 +43,7 @@ public class Helper extends AppCompatActivity {
     private List<Album> albumList;
     static public String title;
     public static int id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -202,4 +208,5 @@ public class Helper extends AppCompatActivity {
         }
         return json;
     }
+
 }

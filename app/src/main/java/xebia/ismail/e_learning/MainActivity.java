@@ -1,8 +1,10 @@
 package xebia.ismail.e_learning;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -21,10 +23,22 @@ import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.LinearLayout;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import xebia.ismail.e_learning.IntroVideo.VideoActivity;
 import xebia.ismail.e_learning.IntroVideo.WelcomeActivity;
 import xebia.ismail.e_learning.fragment.Favorites;
 import xebia.ismail.e_learning.fragment.HomeFragment;
+import xebia.ismail.e_learning.fragment.Points;
+import xebia.ismail.e_learning.fragment.TabGeometry;
 import xebia.ismail.e_learning.fragment.VolumeFragment;
 
 
@@ -39,6 +53,7 @@ public class MainActivity extends AppCompatActivity
     private int mSelectedId;
     SharedPreferences prefs = null;
     private Toolbar mToolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -217,4 +232,5 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
 }
