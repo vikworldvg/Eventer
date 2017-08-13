@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -42,11 +43,15 @@ public class VideoActivity extends AppCompatActivity {
 
     private ArrayList<Points> itemlist;
     Points points;
+    private ProgressBar bar;
+    private TextView textSkip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
+        bar = (ProgressBar) this.findViewById(R.id.progressBar);
+        textSkip = (TextView) this.findViewById(R.id.tvSignUp) ;
         new myServerCall().execute();
         getWindow().setFormat(PixelFormat.UNKNOWN);
         if (Build.VERSION.SDK_INT >= 21) {
@@ -81,12 +86,14 @@ public class VideoActivity extends AppCompatActivity {
         }
     }
     class myServerCall extends AsyncTask<String, Void, String> {
-        ProgressDialog bar;
+//        ProgressDialog bar;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-           bar = ProgressDialog.show(VideoActivity.this, "Загрузка...", "Инициализация данных");
+//           bar = ProgressDialog.show(VideoActivity.this, "Загрузка...", "Инициализация данных");
+            bar.setVisibility(View.VISIBLE);
+
         }
 
 
@@ -113,7 +120,10 @@ public class VideoActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            bar.dismiss();
+//            bar.dismiss();
+            bar.setVisibility(View.GONE);
+            textSkip.setVisibility(View.VISIBLE);
+
 
 
             try {
