@@ -9,30 +9,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9c0bf48-9a39-476e-b218-74bc38e5d4b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+    <list default="true" id="e9c0bf48-9a39-476e-b218-74bc38e5d4b1" name="Default" comment="refresh">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/AboutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/AboutActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/IntroVideo/VideoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/IntroVideo/VideoActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/IntroVideo/WelcomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/IntroVideo/WelcomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/KillYourself.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/KillYourself.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/Main2Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/Main2Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/Favorites.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/Favorites.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/Helper.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/Helper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/HomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/HomeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/TabGeometry.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/TabGeometry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/TabInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/TabInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/WhereToGo.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/fragment/WhereToGo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/helper/AlbumsAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/helper/AlbumsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/recycler/ViewPagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/recycler/ViewPagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/recycler/aadapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/xebia/ismail/e_learning/recycler/aadapter.java" />
     </list>
     <ignored path="UX-UI-Navigation-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -3034,7 +3012,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502641787268</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refresh">
+      <created>1502992662428</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1502992662428</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
