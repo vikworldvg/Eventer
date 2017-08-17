@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.CalendarContract;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import com.pixplicity.fontview.FontAppCompatTextView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 import xebia.ismail.e_learning.FullInfoActivity;
@@ -32,16 +30,8 @@ import xebia.ismail.e_learning.favorites.DBHelper;
  */
 public class aadapter extends RecyclerView.Adapter<aadapter.MyViewHolder>
 {
-   private List<RecyclerItem> listItems;
     private Context mContext;
     private List<Itemlist> itemList;
-    private static RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
-    private static RecyclerView recyclerView;
-    ArrayList<String> wordcombimelist;
-    ArrayList<String> meancombimelist;
-    LinkedHashMap<String,String> namelist;
-    SearchView searchView;
 
     DBHelper sqlHelper;
 

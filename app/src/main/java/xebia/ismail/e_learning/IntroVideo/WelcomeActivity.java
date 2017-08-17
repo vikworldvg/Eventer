@@ -1,7 +1,6 @@
 package xebia.ismail.e_learning.IntroVideo;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,8 +16,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import xebia.ismail.e_learning.MainActivity;
 import xebia.ismail.e_learning.R;
 
 public class WelcomeActivity extends AppCompatActivity {

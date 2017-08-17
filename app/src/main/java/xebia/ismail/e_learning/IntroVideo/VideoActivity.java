@@ -1,10 +1,9 @@
 package xebia.ismail.e_learning.IntroVideo;
 
-import android.app.ProgressDialog;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PixelFormat;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -16,7 +15,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,23 +26,22 @@ import java.util.ArrayList;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import xebia.ismail.e_learning.MainActivity;
 import xebia.ismail.e_learning.R;
 import xebia.ismail.e_learning.fragment.Points;
 import xebia.ismail.e_learning.fragment.TabGeometry;
-import xebia.ismail.e_learning.recycler.Itemlist;
 
 public class VideoActivity extends AppCompatActivity {
-    private VideoView videoView;
     private TextView tvSignUp;
     private Button btnSignIn;
     String url = "https://raw.githubusercontent.com/h3xb0y/Eventer/master/json/points.json";
-    public static String name,posx,posy,description,type;
 
-    private ArrayList<Points> itemlist;
-    Points points;
+    public static String name,description;
+
+    private ArrayList<Points> itemlistPoints;
+       Points points;
     private ProgressBar bar;
     private TextView textSkip;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,29 +120,26 @@ public class VideoActivity extends AppCompatActivity {
 //            bar.dismiss();
             bar.setVisibility(View.GONE);
             textSkip.setVisibility(View.VISIBLE);
-
+            itemlistPoints = new ArrayList<>();
 
 
             try {
-                JSONObject object = new JSONObject(s);
-                JSONArray jArr = object.getJSONArray("points");
-                itemlist = new ArrayList<>();
+                //loading markers info from db
+                JSONObject objectp = new JSONObject(s);
+                JSONArray jArrPoints = objectp.getJSONArray("points");
 
-
-                for (int i =0 ;i<jArr.length();i++) {
+                for (int i =0 ;i<jArrPoints.length();i++) {
                     points= new Points();
-                    points.setName(jArr.getJSONObject(i).getString("name"));
-                    points.setPosx(jArr.getJSONObject(i).getString("posx"));
-                    points.setPosy(jArr.getJSONObject(i).getString("posy"));
-                    points.setDescription( jArr.getJSONObject(i).getString("description"));
-                    points.setType( jArr.getJSONObject(i).getString("type"));
-                    itemlist.add(points);                }
-               name = jArr.getJSONObject(1).getString("name");
-                 posx = jArr.getJSONObject(1).getString("posx");
-                 posy = jArr.getJSONObject(1).getString("posy");
-                 description = jArr.getJSONObject(1).getString("description");
-                 type = jArr.getJSONObject(1).getString("type");
-                TabGeometry.itemlist = itemlist;
+                    points.setName(jArrPoints.getJSONObject(i).getString("name"));
+                    points.setPosx(jArrPoints.getJSONObject(i).getString("posx"));
+                    points.setPosy(jArrPoints.getJSONObject(i).getString("posy"));
+                    points.setDescription( jArrPoints.getJSONObject(i).getString("description"));
+                    points.setType( jArrPoints.getJSONObject(i).getString("type"));
+                    itemlistPoints.add(points);
+                }
+
+
+                TabGeometry.itemlist = itemlistPoints;
 
             } catch (JSONException e) {
                 e.printStackTrace();

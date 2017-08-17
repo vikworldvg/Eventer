@@ -1,56 +1,22 @@
 package xebia.ismail.e_learning;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
+
 import android.content.SharedPreferences;
-import android.media.Image;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import com.pixplicity.fontview.FontAppCompatTextView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import xebia.ismail.e_learning.fragment.TabEvents;
-import xebia.ismail.e_learning.fragment.TabGeometry;
 import xebia.ismail.e_learning.fragment.TabInfo;
-import xebia.ismail.e_learning.fragment.WhereToGo;
-import xebia.ismail.e_learning.recycler.Itemlist;
-import xebia.ismail.e_learning.recycler.RecyclerItem;
-import xebia.ismail.e_learning.recycler.ViewPagerAdapter;
 import xebia.ismail.e_learning.recycler.aadapter;
 
 public class Main2Activity extends AppCompatActivity {
@@ -79,19 +45,12 @@ public class Main2Activity extends AppCompatActivity {
         }
     }
     public static class Info extends Fragment {
-        static String[] rank = new String[] {"1", "2", "3"} ;
-        public static String name = "",nomer="";
+        public static String name = "";
         public static String info ="";
         public static String id = "";
-        public static String fulldescr ="";
         public static int num;
         private ImageView mImageView;
-        private static List<RecyclerItem> listItems;
-        private static ArrayList<Itemlist> itemlist;
-        private RecyclerView recyclerView;
         public aadapter adapter;
-        static Itemlist contact;
-        public static String url="http://eventer.at.ua/events_new.json";
         private static ViewPager mPager;
         private TabLayout mTabLayout;
 

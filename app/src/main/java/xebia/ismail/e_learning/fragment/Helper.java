@@ -1,11 +1,7 @@
 package xebia.ismail.e_learning.fragment;
 
-import android.app.ProgressDialog;
 import android.content.res.Resources;
 import android.graphics.Rect;
-import android.os.AsyncTask;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,9 +11,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.View;
-import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,15 +20,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import xebia.ismail.e_learning.R;
 import xebia.ismail.e_learning.helper.Album;
 import xebia.ismail.e_learning.helper.AlbumsAdapter;
 
-import static java.security.AccessController.getContext;
 
 public class Helper extends AppCompatActivity {
     private RecyclerView recyclerView;

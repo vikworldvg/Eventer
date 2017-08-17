@@ -38,18 +38,17 @@ import xebia.ismail.e_learning.news.NatureItem;
 public class WhereToGo extends Fragment {
 
     private RecyclerView recyclerView;
-    private ArrayList<NatureItem> itemlist;
+
     public String url = "https://raw.githubusercontent.com/h3xboy/Eventer/master/json/events_new.json";
     NatureItem contact;
     private CardAdapter adapter;
     private Date date1,date2;
-
+    public static ArrayList<NatureItem> itemlist;
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.where_to_go, container, false);
-            new myServerCall().execute();
-
+          new myServerCall().execute();
 
 
         recyclerView = (RecyclerView) v.findViewById(R.id.RecyclerWTG);
@@ -57,6 +56,7 @@ public class WhereToGo extends Fragment {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+
 
 
         return v;
@@ -108,7 +108,9 @@ public class WhereToGo extends Fragment {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yy");
                 String s1 = dateFormat.format(new Date());
 
-                JSONObject object = new JSONObject(s);
+                JSONObject objectcl = new JSONObject(s);
+                JSONArray jArr = objectcl.getJSONArray("events");
+                JSONObject object = jArr.getJSONObject(0);
                 for (int i = 0; i < object.length(); i++) {
                     if (object.getJSONArray(String.valueOf(i)).length()!= 0){
                     JSONArray arrays = object.getJSONArray(String.valueOf(i));

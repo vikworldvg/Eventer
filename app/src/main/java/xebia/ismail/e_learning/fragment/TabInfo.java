@@ -39,7 +39,6 @@ public class TabInfo extends Fragment {
 
 
 
-    static String[] rank = new String[] {"1", "2", "3"} ;
     public static String name = "";
     public static String info ="";
     public static String id = "";
