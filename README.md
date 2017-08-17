@@ -1,5 +1,8 @@
 # Eventer!
+[![Build Status](https://travis-ci.org/h3xb0y/Eventer.svg?branch=master)](https://travis-ci.org/h3xb0y/Eventer)
+
 Eventer app for tracking events. Json parse.
+
 
 > ## Links
 > * [vk.com](https://vk.com/h3xb0y/)
