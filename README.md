@@ -16,6 +16,9 @@ Easy starting points are also reviewing [pull requests](https://github.com/h3xb0
 
 **Latest version** [apk](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
 
+[![GitHub followers](https://img.shields.io/github/followers/h3xb0y.svg?style=social&label=Follow)](https://github.com/h3xb0y)
+[![GitHub stars](https://img.shields.io/github/stars/h3xb0y/Eventer.svg?style=social&label=Star)]()
+
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/h3xb0y/Eventer)
 [![Twitter Follow](https://img.shields.io/twitter/follow/h3xb0y.svg?style=social)](https://twitter.com/h3xb0y)
 
