@@ -1,23 +1,25 @@
 # Eventer!
 Android app for tracking events. Json parse.
 
-[![Build Status](https://travis-ci.org/h3xb0y/Eventer.svg?branch=master)](https://travis-ci.org/h3xb0y/Eventer)
-
 [![](https://github.com/h3xb0y/Eventer/blob/master/image/download-button-android-new.png)](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
 
 ![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866662704.gif "WelcomeActivity")
 ![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866139404.gif "WelcomeActivity")
 ![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866227144.gif "WelcomeActivity")
 
-> ## Links
-> * [vk.com](https://vk.com/h3xb0y/)
-> * [demo](https://github.com/h3xboy/Eventer/blob/master/demo/app-debug.apk)
-> * [database example](https://github.com/h3xboy/Eventer/blob/master/json/events_new.json)
+## Join development!
 
-## Алгоритм работы
+**Build status:** [![Build Status](https://travis-ci.org/h3xb0y/Eventer.svg?branch=master)](https://travis-ci.org/h3xb0y/Eventer)
+
+**Start contributing:** Make sure you read [SETUP.md](https://github.com/owncloud/android/blob/master/SETUP.md) when you start working on this project. Basically: Fork this repository and contribute back using pull requests to the master branch.
+Easy starting points are also reviewing [pull requests](https://github.com/h3xb0y/Eventer/pulls) and working on [junior jobs](https://github.com/h3xb0y/Eventer/issues).
+
+**Latest version** [apk](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
+
+## Work algorithm
 ![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/how.png "how")
-##### Парсинг мероприятий выглядит следующим образом:
-### .json файл
+##### Parsing events is as follows:
+### .json
 ```
        "0":[
         {
@@ -68,8 +70,6 @@ Android app for tracking events. Json parse.
                     }
 }
 ```
-#### Tags
-json, db sqlite, map, recycler
 
 ### libs
 ##### build.gradle
