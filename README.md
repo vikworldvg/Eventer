@@ -1,18 +1,18 @@
 # Eventer!
+Android app for tracking events. Json parse.
+
 [![Build Status](https://travis-ci.org/h3xb0y/Eventer.svg?branch=master)](https://travis-ci.org/h3xb0y/Eventer)
 
-Eventer app for tracking events. Json parse.
+[![](https://github.com/h3xb0y/Eventer/blob/master/image/download-button-android-new.png)](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
 
+![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866662704.gif "WelcomeActivity")
+![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866139404.gif "WelcomeActivity")
+![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866227144.gif "WelcomeActivity")
 
 > ## Links
 > * [vk.com](https://vk.com/h3xb0y/)
 > * [demo](https://github.com/h3xboy/Eventer/blob/master/demo/app-debug.apk)
 > * [database example](https://github.com/h3xboy/Eventer/blob/master/json/events_new.json)
-
-
-![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/1497866662704.gif "WelcomeActivity")
-![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/1497866139404.gif "WelcomeActivity")
-![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/1497866227144.gif "WelcomeActivity")
 
 ## Алгоритм работы
 ![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/how.png "how")
