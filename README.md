@@ -16,6 +16,9 @@ Easy starting points are also reviewing [pull requests](https://github.com/h3xb0
 
 **Latest version** [apk](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
 
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/h3xb0y/Eventer)
+[![Twitter Follow](https://img.shields.io/twitter/follow/h3xb0y.svg?style=social)](https://twitter.com/h3xb0y)
+
 ## Work algorithm
 ![Screenshot](https://github.com/h3xboy/Eventer/blob/master/image/how.png "how")
 ##### Parsing events is as follows:
