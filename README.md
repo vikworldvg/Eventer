@@ -1,7 +1,7 @@
 # Eventer!
 Android app for tracking events. Json parse.
 
-[![](https://github.com/h3xb0y/Eventer/blob/master/image/download-button-android-new.png)](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
+[![](https://github.com/h3xb0y/Eventer/blob/master/image/download-button-android-new.png)](https://github.com/h3xb0y/Eventer/blob/master/app.apk)
 
 ![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866662704.gif "WelcomeActivity")
 ![alt text](https://github.com/h3xboy/Eventer/blob/master/image/1497866139404.gif "WelcomeActivity")
@@ -14,7 +14,7 @@ Android app for tracking events. Json parse.
 **Start contributing:** Make sure you read [SETUP.md](https://github.com/h3xb0y/Eventer/blob/master/SETUP.md) when you start working on this project. Basically: Fork this repository and contribute back using pull requests to the master branch.
 Easy starting points are also reviewing [pull requests](https://github.com/h3xb0y/Eventer/pulls) and working on [junior jobs](https://github.com/h3xb0y/Eventer/issues).
 
-**Latest version** [apk](https://github.com/h3xb0y/Eventer/blob/master/demo/app-debug.apk)
+**Latest version** [apk](https://github.com/h3xb0y/Eventer/blob/master/app.apk)
 
 [![GitHub followers](https://img.shields.io/github/followers/h3xb0y.svg?style=social&label=Follow)](https://github.com/h3xb0y)
 [![GitHub stars](https://img.shields.io/github/stars/h3xb0y/Eventer.svg?style=social&label=Star)]()
